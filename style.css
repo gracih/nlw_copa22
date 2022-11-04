@@ -5,10 +5,10 @@
 }
 
 :root {
---card-title-border-color: #746615;
---card-color-primary: #f7dd43;
---card-bg-color: #1d1c19;
---bg: url(./assets/bg-yellow.svg);
+  --card-title-border-color: #746615;
+  --card-color-primary: #f7dd43;
+  --card-bg-color: #1d1c19;
+  --bg: url(./assets/bg-yellow.svg);
 }
 
 body.blue {
@@ -32,14 +32,16 @@ ul {
 body {
   background-color: #121214;
   background-image: var(--bg);
+  background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
-/* outra opção- 
+  background-size: 100vw;
+
+  /* outra opção- 
 background: #121214 var(--bg) no repeat top center/cover*/
 }
 
 body * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #app {
@@ -51,7 +53,6 @@ body * {
 header {
   margin-bottom: 63px;
   text-align: center;
-
 }
 
 #cards {
@@ -82,7 +83,7 @@ header {
   width: fit-content;
   margin-inline: auto;
   margin-bottom: 53px;
-  
+
   color: #f7dd43;
 }
 
@@ -133,27 +134,25 @@ header {
 }
 
 .card {
-opacity: 0;
-animation: appear 0.2s forwards;}
-
-@keyframes appear {
-0% { 
-  transform: translateY(-50px);
   opacity: 0;
+  animation: appear 0.2s forwards;
 }
 
-100% {
-  opacity: 1;
+@keyframes appear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
 @media (min-width: 700px) {
-#cards {
-  max-width: 700px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  #cards {
+    max-width: 700px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
-
-
-
