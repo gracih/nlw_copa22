@@ -1,9 +1,9 @@
 function createGame(player1, hour, player2) {
   return `
 <li>
-    <img title="${player1.toUpperCase()}" src="./assets/icon-${player1}.svg" alt="Bandeira do ${player1}">
+    <img title="${player1.toUpperCase()}" src="./assets/icon-${player1}.svg" alt="Bandeiran do ${player1}">
     <strong>${hour}</strong>
-    <img title="${player2.toUpperCase()}" src="./assets/icon-${player2}.svg" alt="Bandeira da ${player2}">
+    <img title="${player2.toUpperCase()}" src="./assets/icon-${player2}.svg" alt="Bandeiran da ${player2}">
     </li>
     `
 }
@@ -26,7 +26,7 @@ document.querySelector("#cards").innerHTML =
   createCard(
     "21/11",
     "segunda",
-    createGame("inglaterra", "10:00", "ira") +
+    createGame("inglaterra", "10:00", "iran") +
       createGame("senegal", "13:00", "holanda") +
       createGame("estados unidos", "16:00", "gales")
   ) +
@@ -57,7 +57,7 @@ document.querySelector("#cards").innerHTML =
   createCard(
     "25/11",
     "sexta",
-    createGame("gales", "07:00", "ira") +
+    createGame("gales", "07:00", "iran") +
       createGame("qatar", "10:00", "senegal") +
       createGame("holanda", "13:00", "equador") +
       createGame("inglaterra", "16:00", "estados unidos")
@@ -91,7 +91,7 @@ document.querySelector("#cards").innerHTML =
     "terça",
     createGame("equador", "12:00", "senegal") +
       createGame("holanda", "12:00", "qatar") +
-      createGame("ira", "16:00", "estados unidos") +
+      createGame("iran", "16:00", "estados unidos") +
       createGame("gales", "16:00", "inglaterra")
   ) +
   createCard(
